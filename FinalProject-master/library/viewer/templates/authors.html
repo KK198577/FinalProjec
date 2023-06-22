@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+
+{% block content %}
+  <h2><span>Autoři:</span> </h2>
+  <ul>
+    {% for author in authors %}
+      <li>{{ author }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

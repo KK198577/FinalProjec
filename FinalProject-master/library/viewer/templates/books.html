@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+
+{% block content %}
+  <h2><span>Knihy:</span> </h2>
+  <ul>
+    {% for book in books %}
+      <img src="{{ book.image }}" width = 150px>
+      <li>Název: {{ book.name }}</li>
+      <li>Originální název: {{ book.name }}</li>
+      <li>Autor: {{ book.author }}</li>
+      <li>Žánr: {{ book.genre }}</li>
+      <li>Rok: {{ book.year }}</li>
+      <li>Jazyk: {{ book.language }}</li><hr>
+    {% endfor %}
+  </ul>
+{% endblock %}
